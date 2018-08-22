@@ -1,0 +1,319 @@
+# Logfile created on 2018-08-22 18:39:45 +0200 by logger.rb/56438
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:39:45 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [7a69f2af] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [7a69f2af] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ea8e47b8] Running /usr/bin/env #<StringIO:0x38c23f8> /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh as root@51.38.36.161
+ DEBUG [ea8e47b8] Command: /usr/bin/env #<StringIO:0x38c23f8> /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh
+  INFO [0222e307] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [0222e307] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [5a3d7d6a] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [5a3d7d6a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+  INFO [88c9f361] Running /usr/bin/env mkdir -p /home/gkgaming/www/shared /home/gkgaming/www/releases as root@51.38.36.161
+ DEBUG [88c9f361] Command: /usr/bin/env mkdir -p /home/gkgaming/www/shared /home/gkgaming/www/releases
+ DEBUG [10f4eb20] Running [ -f /home/gkgaming/www/current/REVISION ] as root@51.38.36.161
+ DEBUG [10f4eb20] Command: [ -f /home/gkgaming/www/current/REVISION ]
+ DEBUG [90bb23d7] Running /usr/bin/env cat /home/gkgaming/www/current/REVISION 2>/dev/null as root@51.38.36.161
+ DEBUG [90bb23d7] Command: /usr/bin/env cat /home/gkgaming/www/current/REVISION 2>/dev/null
+ DEBUG [6e4d7a9d] Running [ -f /home/gkgaming/www/repo/HEAD ] as root@51.38.36.161
+ DEBUG [6e4d7a9d] Command: [ -f /home/gkgaming/www/repo/HEAD ]
+  INFO The repository mirror is at /home/gkgaming/www/repo
+ DEBUG [0ee80369] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [0ee80369] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+  INFO [fdf9036f] Running /usr/bin/env git remote set-url origin ssh://root@51.38.36.161/home/gkgaming/git as root@51.38.36.161
+ DEBUG [fdf9036f] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git remote set-url origin ssh://root@51.38.36.161/home/gkgaming/git )
+  INFO [984d687f] Running /usr/bin/env git remote update --prune as root@51.38.36.161
+ DEBUG [984d687f] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [8c589d2f] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [8c589d2f] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+  INFO [91feee2d] Running /usr/bin/env mkdir -p /home/gkgaming/www/releases/20180822163951 as root@51.38.36.161
+ DEBUG [91feee2d] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env mkdir -p /home/gkgaming/www/releases/20180822163951 )
+  INFO [d1ec2566] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/gkgaming/www/releases/20180822163951 as root@51.38.36.161
+ DEBUG [d1ec2566] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/gkgaming/www/releases/20180822163951 )
+ DEBUG [cb6b3871] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [cb6b3871] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+ DEBUG [731f3159] Running /usr/bin/env git rev-list --max-count=1 master as root@51.38.36.161
+ DEBUG [731f3159] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [7723ed02] Running if test ! -d /home/gkgaming/www/releases/20180822163951; then echo "Directory does not exist '/home/gkgaming/www/releases/20180822163951'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [7723ed02] Command: if test ! -d /home/gkgaming/www/releases/20180822163951; then echo "Directory does not exist '/home/gkgaming/www/releases/20180822163951'" 1>&2; false; fi
+  INFO [c4a0d4a2] Running /usr/bin/env echo "" > REVISION as root@51.38.36.161
+ DEBUG [c4a0d4a2] Command: cd /home/gkgaming/www/releases/20180822163951 && /usr/bin/env echo "" > REVISION
+  INFO [1c5f5289] Running /usr/bin/env ln -s /home/gkgaming/www/releases/20180822163951 /home/gkgaming/www/releases/current as root@51.38.36.161
+ DEBUG [1c5f5289] Command: /usr/bin/env ln -s /home/gkgaming/www/releases/20180822163951 /home/gkgaming/www/releases/current
+  INFO [9d6f1b5f] Running /usr/bin/env mv /home/gkgaming/www/releases/current /home/gkgaming/www as root@51.38.36.161
+ DEBUG [9d6f1b5f] Command: /usr/bin/env mv /home/gkgaming/www/releases/current /home/gkgaming/www
+ DEBUG [c2e8061e] Running /usr/bin/env ls -x /home/gkgaming/www/releases as root@51.38.36.161
+ DEBUG [c2e8061e] Command: /usr/bin/env ls -x /home/gkgaming/www/releases
+ DEBUG [518b03b6] Running if test ! -d /home/gkgaming/www/releases; then echo "Directory does not exist '/home/gkgaming/www/releases'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [518b03b6] Command: if test ! -d /home/gkgaming/www/releases; then echo "Directory does not exist '/home/gkgaming/www/releases'" 1>&2; false; fi
+  INFO [e08c03dc] Running /usr/bin/env echo "Branch master (at ) deployed as release 20180822163951 by Gr‚gory" >> /home/gkgaming/www/revisions.log as root@51.38.36.161
+ DEBUG [e08c03dc] Command: cd /home/gkgaming/www/releases && /usr/bin/env echo "Branch master (at ) deployed as release 20180822163951 by Gr‚gory" >> /home/gkgaming/www/revisions.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:40:17 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5df39576] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [5df39576] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2e764b66] Running /usr/bin/env #<StringIO:0x38126d0> /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh as root@51.38.36.161
+ DEBUG [2e764b66] Command: /usr/bin/env #<StringIO:0x38126d0> /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh
+  INFO [283fc4c8] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [283fc4c8] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [24bddc88] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [24bddc88] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+  INFO [5d2c6b46] Running /usr/bin/env mkdir -p /home/gkgaming/www/shared /home/gkgaming/www/releases as root@51.38.36.161
+ DEBUG [5d2c6b46] Command: /usr/bin/env mkdir -p /home/gkgaming/www/shared /home/gkgaming/www/releases
+ DEBUG [2996262a] Running [ -f /home/gkgaming/www/current/REVISION ] as root@51.38.36.161
+ DEBUG [2996262a] Command: [ -f /home/gkgaming/www/current/REVISION ]
+ DEBUG [e31a52b1] Running /usr/bin/env cat /home/gkgaming/www/current/REVISION 2>/dev/null as root@51.38.36.161
+ DEBUG [e31a52b1] Command: /usr/bin/env cat /home/gkgaming/www/current/REVISION 2>/dev/null
+ DEBUG [1b1e57d6] Running [ -f /home/gkgaming/www/repo/HEAD ] as root@51.38.36.161
+ DEBUG [1b1e57d6] Command: [ -f /home/gkgaming/www/repo/HEAD ]
+  INFO The repository mirror is at /home/gkgaming/www/repo
+ DEBUG [da07465c] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [da07465c] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+  INFO [323deb9c] Running /usr/bin/env git remote set-url origin ssh://root@51.38.36.161/home/gkgaming/git as root@51.38.36.161
+ DEBUG [323deb9c] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git remote set-url origin ssh://root@51.38.36.161/home/gkgaming/git )
+  INFO [f9362e0d] Running /usr/bin/env git remote update --prune as root@51.38.36.161
+ DEBUG [f9362e0d] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [404e5074] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [404e5074] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+  INFO [949a165f] Running /usr/bin/env mkdir -p /home/gkgaming/www/releases/20180822164017 as root@51.38.36.161
+ DEBUG [949a165f] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env mkdir -p /home/gkgaming/www/releases/20180822164017 )
+  INFO [52d38f62] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/gkgaming/www/releases/20180822164017 as root@51.38.36.161
+ DEBUG [52d38f62] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/gkgaming/www/releases/20180822164017 )
+ DEBUG [9bc48ddc] Running if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [9bc48ddc] Command: if test ! -d /home/gkgaming/www/repo; then echo "Directory does not exist '/home/gkgaming/www/repo'" 1>&2; false; fi
+ DEBUG [498dbfa0] Running /usr/bin/env git rev-list --max-count=1 master as root@51.38.36.161
+ DEBUG [498dbfa0] Command: cd /home/gkgaming/www/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [b8a47351] Running if test ! -d /home/gkgaming/www/releases/20180822164017; then echo "Directory does not exist '/home/gkgaming/www/releases/20180822164017'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [b8a47351] Command: if test ! -d /home/gkgaming/www/releases/20180822164017; then echo "Directory does not exist '/home/gkgaming/www/releases/20180822164017'" 1>&2; false; fi
+  INFO [af46319c] Running /usr/bin/env echo "" > REVISION as root@51.38.36.161
+ DEBUG [af46319c] Command: cd /home/gkgaming/www/releases/20180822164017 && /usr/bin/env echo "" > REVISION
+  INFO [469f5c82] Running /usr/bin/env ln -s /home/gkgaming/www/releases/20180822164017 /home/gkgaming/www/releases/current as root@51.38.36.161
+ DEBUG [469f5c82] Command: /usr/bin/env ln -s /home/gkgaming/www/releases/20180822164017 /home/gkgaming/www/releases/current
+  INFO [14407ee3] Running /usr/bin/env mv /home/gkgaming/www/releases/current /home/gkgaming/www as root@51.38.36.161
+ DEBUG [14407ee3] Command: /usr/bin/env mv /home/gkgaming/www/releases/current /home/gkgaming/www
+ DEBUG [d0d1cd6f] Running /usr/bin/env ls -x /home/gkgaming/www/releases as root@51.38.36.161
+ DEBUG [d0d1cd6f] Command: /usr/bin/env ls -x /home/gkgaming/www/releases
+ DEBUG [c71b2ff8] Running if test ! -d /home/gkgaming/www/releases; then echo "Directory does not exist '/home/gkgaming/www/releases'" 1>&2; false; fi as root@51.38.36.161
+ DEBUG [c71b2ff8] Command: if test ! -d /home/gkgaming/www/releases; then echo "Directory does not exist '/home/gkgaming/www/releases'" 1>&2; false; fi
+  INFO [c23ea341] Running /usr/bin/env echo "Branch master (at ) deployed as release 20180822164017 by Gr‚gory" >> /home/gkgaming/www/revisions.log as root@51.38.36.161
+ DEBUG [c23ea341] Command: cd /home/gkgaming/www/releases && /usr/bin/env echo "Branch master (at ) deployed as release 20180822164017 by Gr‚gory" >> /home/gkgaming/www/revisions.log
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:40:37 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [28d8981c] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [28d8981c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [06ffb49c] Finished in 7.760 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [bbc7902f] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [bbc7902f] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [a340a2a6] Finished in 0.087 seconds with exit status 0 (successful).
+  INFO [26fb97f0] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [26fb97f0] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+ DEBUG [874cf024] 	Warning: Permanently added '51.38.36.161' (ECDSA) to the list of known hosts.
+ DEBUG [874cf024] 	root@51.38.36.161: Permission denied (publickey,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:41:59 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8f7ab064] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [8f7ab064] Command: /usr/bin/env mkdir -p /tmp
+  INFO [76392dcf] Finished in 3.206 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [762ed8b2] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [762ed8b2] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [0b73692c] Finished in 0.089 seconds with exit status 0 (successful).
+  INFO [7575552a] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [7575552a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+ DEBUG [11066144] 	root@51.38.36.161: Permission denied (publickey,password).
+ DEBUG [11066144] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:47:32 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c44cc0f8] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [c44cc0f8] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e8a3aff7] Finished in 13.401 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [22bb9b3c] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [22bb9b3c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [3fe04471] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [f9cd35e4] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [f9cd35e4] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+ DEBUG [ce354308] 	root@51.38.36.161: Permission denied (publickey,password).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:48:42 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c72335a9] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [c72335a9] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f55d3033] Finished in 3.853 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [1820a8eb] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [1820a8eb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [d9305c3b] Finished in 0.088 seconds with exit status 0 (successful).
+  INFO [a4ea924a] Running /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [a4ea924a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote ssh://root@51.38.36.161/home/gkgaming/git HEAD )
+ DEBUG [a59fc0e1] 	root@51.38.36.161: Permission denied (publickey,password).
+ DEBUG [a59fc0e1] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:49:41 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [bf32451a] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [bf32451a] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ecacbfab] Finished in 17.132 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [fd18e32c] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [fd18e32c] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [c1d9c84c] Finished in 0.100 seconds with exit status 0 (successful).
+  INFO [94f72783] Running /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD as root@51.38.36.161
+ DEBUG [94f72783] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD )
+ DEBUG [acd1fda1] 	git@github.com: Permission denied (publickey).
+ DEBUG [acd1fda1] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 18:53:30 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [14a9979c] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [14a9979c] Command: /usr/bin/env mkdir -p /tmp
+  INFO [4f02f715] Finished in 7.429 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 100.0%
+  INFO [3ba868fc] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh as root@51.38.36.161
+ DEBUG [3ba868fc] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh
+  INFO [ffa282f4] Finished in 0.084 seconds with exit status 0 (successful).
+  INFO [883a17a3] Running /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD as root@51.38.36.161
+ DEBUG [883a17a3] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-greg.sh" ; /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD )
+ DEBUG [f4e84914] 	git@github.com: Permission denied (publickey).
+ DEBUG [f4e84914] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:04:44 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ba775cfc] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [ba775cfc] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b0081c06] Finished in 7.713 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [840d0624] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [840d0624] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [0f03f916] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [abfc3e74] Running /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD as root@51.38.36.161
+ DEBUG [abfc3e74] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD )
+ DEBUG [367d7faf] 	Warning: Permanently added the RSA host key for IP address '192.30.253.112' to the list of known hosts.
+ DEBUG [367d7faf] 	git@github.com: Permission denied (publickey).
+ DEBUG [367d7faf] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:07:14 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a68f37d0] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [a68f37d0] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5b4c93d9] Finished in 6.817 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [20433ef7] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [20433ef7] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [55fbf73f] Finished in 0.095 seconds with exit status 0 (successful).
+  INFO [ad394955] Running /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD as root@51.38.36.161
+ DEBUG [ad394955] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD )
+ DEBUG [b4a4667d] 	git@github.com: Permission denied (publickey).
+ DEBUG [b4a4667d] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:08:15 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [97212f62] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [97212f62] Command: /usr/bin/env mkdir -p /tmp
+  INFO [2ebd8db0] Finished in 2.798 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 100.0%
+  INFO [c0ef112e] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh as root@51.38.36.161
+ DEBUG [c0ef112e] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh
+  INFO [8cc9b8eb] Finished in 0.090 seconds with exit status 0 (successful).
+  INFO [71642cbb] Running /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD as root@51.38.36.161
+ DEBUG [71642cbb] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-greg.sh" ; /usr/bin/env git ls-remote git@github.com:Greg62800/gkgaming62.xyz.git HEAD )
+ DEBUG [92849990] 	git@github.com: Permission denied (publickey).
+ DEBUG [92849990] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:09:25 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [524fef7b] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [524fef7b] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f18564b6] Finished in 5.334 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-greg.sh 100.0%
+  INFO [86a39dbf] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh as root@51.38.36.161
+ DEBUG [86a39dbf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-greg.sh
+  INFO [0444bd3a] Finished in 0.091 seconds with exit status 0 (successful).
+  INFO [2c635d87] Running /usr/bin/env git ls-remote  HEAD as root@51.38.36.161
+ DEBUG [2c635d87] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-greg.sh" ; /usr/bin/env git ls-remote  HEAD )
+ DEBUG [51370783] 	fatal: 'HEAD' does not appear to be a git repository
+ DEBUG [51370783] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:12:35 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [875ed868] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [875ed868] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1eb5d821] Finished in 6.215 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [77293ce6] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [77293ce6] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [9861c4ad] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [810d8559] Running /usr/bin/env git ls-remote f:/gitChristmas HEAD as root@51.38.36.161
+ DEBUG [810d8559] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote f:/gitChristmas HEAD )
+ DEBUG [fbca122c] 	ssh: Could not resolve hostname f: Temporary failure in name resolution
+ DEBUG [fbca122c] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2018-08-22 19:17:31 +0200 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [d77fef5e] Running /usr/bin/env mkdir -p /tmp as root@51.38.36.161
+ DEBUG [d77fef5e] Command: /usr/bin/env mkdir -p /tmp
+  INFO [fbaf74da] Finished in 5.610 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 0.0%
+  INFO Uploading /tmp/git-ssh-Gkgaming-production-Gr‚gory.sh 100.0%
+  INFO [de0b4fdb] Running /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh as root@51.38.36.161
+ DEBUG [de0b4fdb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-Gkgaming-production-Gr\‚gory.sh
+  INFO [055b5912] Finished in 0.097 seconds with exit status 0 (successful).
+  INFO [2662fc84] Running /usr/bin/env git ls-remote root@51.38.36.161:/home/gkgaming/git HEAD as root@51.38.36.161
+ DEBUG [2662fc84] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-Gkgaming-production-Gr‚gory.sh" ; /usr/bin/env git ls-remote root@51.38.36.161:/home/gkgaming/git HEAD )
+ DEBUG [3f6ecaee] 	root@51.38.36.161: Permission denied (publickey,password).
+ DEBUG [3f6ecaee] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.

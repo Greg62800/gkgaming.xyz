@@ -1,0 +1,446 @@
+$white: #FFFFFF
+
+*
+  margin: 0
+  padding: 0
+  transition-duration: .3s
+  box-sizing: border-box
+
+body
+  background: #f9f9f9
+  line-height: 1.8
+  color: #404852
+  &.opacity
+    .topbar
+      &.christmas
+        background-color: rgba(#6ab04c, .95)
+
+  &.close
+    .topbar
+      &.christmas
+        top: -66px
+    .menu__account
+      top: -66px
+
+@import "sass/icon"
+@import "sass/topbar"
+@import "sass/btn"
+@import "sass/grid"
+@import "sass/responsive"
+@import "sass/tooltip"
+@import "sass/user_profil"
+
+.sticky
+  position: sticky
+  top: 66px
+
+a
+  text-decoration: none
+  color: #6ab04c
+
+::selection
+  background-color: #6ab04c
+  color: #ffffff
+
+::-moz-selection
+  background-color: #333333
+  color: #ffffff
+
+
+.container
+  padding-top: 80px
+  margin: 0 8px 0 8px
+
+.pagination
+  position: relative
+  display: block
+  padding-bottom: 15px
+  width: 100%
+  margin: 1.875rem 0
+  a
+    display: block
+    float: left
+    width: 33px
+    height: 33px
+    color: #333333
+    background-color: transparent
+    border: 1px solid #cecece
+    margin-right: 5px
+    text-align: center
+    border-radius: 5px
+
+    &:hover, &.active
+      border-color: transparent
+      background-color: #6ab04c
+      color: #ffffff
+    &.disabled
+      display: none
+
+
+.form-group
+
+  margin-bottom: 15px
+
+  label
+    width: 100%
+    font-weight: bold
+
+  .form-control
+    outline: none
+    padding: 0 20px
+    width: 100%
+    height: 50px
+    border: 1px solid rgba(121, 121, 121, 0.35)
+    border-radius: 5px
+    &:focus
+      box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+  textarea.form-control
+    height: auto
+    padding-top: 5px
+
+footer.footer
+  position: relative
+  display: block
+  text-align: center
+  margin-top: 50px
+  padding: 15px
+  background-color: #ffffff
+  border-top: 2px solid #ededed
+
+.notification
+  height: 42px
+  line-height: 42px
+  padding-left: 15px
+  border: 1px solid #333333
+
+  &.error
+    background-color: #ff4757
+    border-color: #ff6b81
+    color: $white
+    font-weight: bold
+
+  &.success
+    background-color: #2ed573
+    border-color: #7bed9f
+    color: $white
+    font-weight: bold
+
+  &.info
+    background-color: #2b63c5
+    border-color: #284a9b
+    color: $white
+    font-weight: bold
+
+
+
+.error-message
+  padding: 15px
+  background-color: #ff4757
+  color: #ffffff
+
+  li
+    margin-left: 15px
+    list-style: none
+
+
+table
+  border-collapse: collapse
+  width: 100%
+
+  td, th
+    border: 1px solid #dddddd
+    border-bottom-width: 2px
+    padding: 8px
+  tr:nth-child(even)
+    background-color: #f2f2f2
+  tr:hover
+    background-color: #b7b7b7
+  th
+    border-bottom-width: 1px
+    padding-top: 12px
+    padding-bottom: 12px
+    text-align: left
+    background-color: #6ab04c
+    color: #ffffff
+  td
+    span.label-danger
+      padding: 5px
+      background-color: #ff4757
+      color: #ffffff
+
+.img-circle
+  width: 50px
+  height: 50px
+  border-radius: 50%
+
+.btn-avatar
+  display: block
+  background-color: #2eada3
+  padding: 10px
+  color: #ffffff
+  text-align: center
+  margin-bottom: 5px
+  &.delete
+    background-color: #ff4757
+    &:hover
+      background-color: #ff6b81
+
+input::placeholder
+  color: #bbbbbb
+input:focus::placeholder
+  color: #404852
+input::-ms-input-placeholder
+  color: #bbbbbb
+input:focus::-ms-input-placeholder
+  color: #404852
+
+.blog-main
+  padding-top: 15px
+
+  .title
+    clear: both
+    margin-bottom: 15px
+
+  .breadcrumb
+    border-radius: 3px
+    position: relative
+    width: 100%
+    display: block
+    padding: 8px 15px
+    background-color: $white
+    box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+    a
+      padding: 0 5px
+    .separator, .active
+      color: #bbbbbb
+
+  .article
+    &:hover
+      box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+    position: relative
+    display: block
+    border: 1px solid #ededed
+    margin-bottom: 15px
+    header
+      height: 52px
+      line-height: 52px
+      text-align: center
+      width: 100%
+      background-color: #6ab04c
+      color: #ffffff
+      border-top-left-radius: 5px
+      border-top-right-radius: 5px
+      a
+        display: block
+        color: #ffffff
+    .meta
+      display: block
+      position: absolute
+      left: 0
+      top: 52px
+      right: 0
+      padding: 5px
+      border-bottom: 1px solid #f1f1f1
+      background-color: #ffffff
+    .contents
+      margin-top: 25px
+      padding: 15px
+      background-color: #ffffff
+      border-bottom-left-radius: 5px
+      border-bottom-right-radius: 5px
+
+    footer
+      padding: 15px
+      position: relative
+      margin-bottom: 15px
+      .btn-more
+        position: relative
+        display: inline-block
+        height: 45px
+        line-height: 45px
+        padding: 0 15px
+        color: #ffffff
+        background-color: #6ab04c
+        border-radius: 3px
+        &:hover
+          border-bottom: none
+  .posts
+    box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+    background-color: white
+    padding: 20px
+    margin-top: 20px
+    .read__more
+      display: block
+      padding: 10px
+      width: 96.42px
+      background-color: #404852
+      color: #ffffff
+  .sidebar
+    box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+    position: sticky
+    top: 0
+    left: 0
+    right: 0
+    background-color: white
+    padding: 20px
+    margin-top: 20px
+    .search
+      position: relative
+      .form-control
+        width: 100%
+        height: 32px
+        border: 2px solid #f1f1f1
+        padding: 5px
+        outline: none
+      .icon
+        position: absolute
+        top: 0
+        right: 0
+        width: 32px
+        height: 32px
+        background-color: #ffffff
+        border: 2px solid #f1f1f1
+        cursor: pointer
+        outline: none
+    .list_category
+      list-style: none
+
+      .hide
+        display: none
+      li
+        margin-left: 5px
+    .last_comment
+      &:hover
+        margin-bottom: 15px
+      position: relative
+      display: block
+      padding: 10px
+      height: 70px
+      background-color: $white
+      box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+      .avatar
+        img
+          float: left
+          width: 50px
+          border-radius: 50%
+      .content_comment
+        margin-top: 10px
+        padding-left: 60px
+    .categories
+      position: relative
+      select
+        -webkit-appearance: none
+        &::-ms-expand
+          display: none
+        outline: none
+        width: 100%
+        height: 39px
+        padding: 5px
+        border: 1px solid #2c3e50
+        border-radius: 5px
+        color: #404852
+      [type="submit"]
+        position: absolute
+        top: 0
+        right: 0
+        width: 50px
+        height: 39px
+        display: block
+        background-color: #2c3e50
+        color: $white
+        border: none
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        outline: none
+        cursor: pointer
+        border: 1px solid transparent
+        &:hover
+          background-color: transparent
+          color: #2c3e50
+          border-color: #2c3e50
+  section.sidebar
+    position: relative
+    span
+      color: darken(#ececec, 30)
+  .article-view
+    box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+    position: relative
+    display: block
+    background-color: $white
+    padding: 20px
+    margin-top: 20px
+  .comment-form
+    @for $i from 1 through 6
+      h#{$i}
+        margin-bottom: 5px
+        border-bottom: 1px solid #cecece
+
+  .comments
+    margin-top: 15px
+
+    .comment
+      //box-shadow: 0 1px 4px rgba(186, 186, 186, 0.5)
+      position: relative
+      &:hover
+        background-color: #f9f9f9
+      border-bottom: 1px solid #e6e9ed
+      margin-bottom: 15px
+      padding-bottom: 15px
+
+      &.replies
+        margin-left: 25px
+
+      .avatar
+        float: left
+        margin-top: 5px
+        margin-left: 5px
+        line-height: 66px
+        width: 50px
+        height: 50px
+        border-radius: 50%
+
+      .content
+        margin-left: 60px
+        .author_name
+          width: 100%
+          display: block
+        //.actions
+        .body
+          margin-left: 15px
+          color: rgb(102, 102, 102)
+          margin-bottom: 5px
+
+.notification_view
+  span a
+    padding: 15px
+    display: block
+    width: 100%
+    border-bottom: 1px solid #cecece
+    color: #9f9f9f
+    &:hover
+      background-color: lighten(#FFFFFF, 7)
+      color: #404852
+
+#delete-comment
+  position: relative
+  display: inline-block
+
+.back_to_top
+  position: fixed
+  top: 80%
+  right: 10px
+  background-color: #404852
+  padding: 0 5px
+  border-radius: 5px
+  display: none
+  transition-property: display
+  cursor: pointer
+  i
+    color: #ffffff
+
+::-webkit-scrollbar
+  width: 10px
+  &-track
+    background-color: #f1f1f1
+  &-thumb
+    background-color: #404852
